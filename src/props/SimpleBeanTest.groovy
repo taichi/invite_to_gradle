@@ -8,8 +8,7 @@ public class SimpleBeanTest {
 
 	@Test
 	public void testName() throws Exception {
-		SimpleBean bean = new SimpleBean()
-		bean.name = "John"
+		def bean = new SimpleBean( name: "John" )
 		assert "John" == bean.name
 	}
 }
