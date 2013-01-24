@@ -15,6 +15,6 @@ public class SimpleBeanTest {
 	@Test
 	public void testJson() throws Exception {
 		def bean = new SimpleBean( name: "John", age: 18)
-		assert "{\"name\":\"John\", \"age\":18}" == bean.toJson()
+		assert '{"name":"John", "age":18}' == bean.toJson()
 	}
 }

@@ -7,6 +7,6 @@ class SimpleBean {
 	def int age
 
 	def toJson() {
-		"{\"name\":\"" + getName() + "\", \"age\":" + getAge() + "}"
+		"{\"name\":\"$name\", \"age\":$age}"
 	}
 }
