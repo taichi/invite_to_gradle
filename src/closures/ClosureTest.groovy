@@ -9,9 +9,8 @@ public class ClosureTest {
 	@Test
 	public void stringsToUpperCase() {
 		def list = ["a", "b", "c", "d"]
-		def actual = []
-		for (String s : list) {
-			actual.add(s.toUpperCase())
+		def actual = list.collect { s ->
+			s.toUpperCase()
 		}
 		assert ["A", "B", "C", "D"]== actual
 	}
