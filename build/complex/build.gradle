@@ -11,4 +11,7 @@ dependencies {
 	testCompile 'junit:junit:4.+'
 }
 apply from: file('gradle/ide.gradle')
+
+apply from: file('gradle/custom.gradle')
+
 defaultTasks 'clean', 'build'

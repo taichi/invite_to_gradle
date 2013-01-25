@@ -1,0 +1,12 @@
+war {
+	doFirst {
+		def f = file('gradle/number')
+		def no = 0;
+		if(f.exists()) {
+			no = f.text
+		} else {
+			f.text = no
+		}
+		war.classifier = f.text = ++no
+	}
+}
