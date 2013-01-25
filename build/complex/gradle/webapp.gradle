@@ -1,0 +1,23 @@
+apply plugin: 'war'
+
+webAppDirName = 'webapp'
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.gradle.api.plugins:gradle-tomcat-plugin:0.9.6'
+	}
+}
+apply plugin: org.gradle.api.plugins.tomcat.TomcatPlugin
+
+dependencies {
+	def tomcatVersion = '7.0.11'
+	def gid = 'org.apache.tomcat.embed'
+	tomcat "$gid:tomcat-embed-core:${tomcatVersion}",
+		   "$gid:tomcat-embed-logging-juli:${tomcatVersion}"
+	tomcat("$gid:tomcat-embed-jasper:${tomcatVersion}") {
+		exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+	}
+}

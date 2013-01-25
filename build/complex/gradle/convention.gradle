@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceSets {
+	main {
+		java.srcDir 'src'
+		resources.srcDirs 'src'
+	}
+	test {
+		java.srcDir 'test'
+		resources.srcDir 'test'
+	}
+}
+
+sourceCompatibility = targetCompatibility = 1.7
+
+tasks.withType(AbstractCompile) each { it.options.encoding = 'UTF-8' }
