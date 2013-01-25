@@ -19,6 +19,18 @@ GitHubでコードリーディングする為のChrome拡張
 #### [Yuzen](https://github.com/taichi/yuzen)
 markdownからhtmlを生成するGradleプラグイン
 
+
+## アジェンダ
+- Javaにおけるビルドツールの歴史
+- [Groovy]とは何か
+- [Gradle]とは何か
+- [Graldeを使ったビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/simple/build.gradle)
+- [Gradle]への移行
+- Gradle Wrapper
+- [本格的なビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/complex/build.gradle)
+- まとめ
+
+
 ## Javaにおけるビルドツールの歴史
 
 ### [Make](http://www.gnu.org/software/make/)
@@ -128,7 +140,7 @@ Java8 でついに[ラムダ](http://openjdk.java.net/projects/lambda/)が導入
 - [Scala](http://www.scala-lang.org/)
 
 
-## Gradleとは何か
+## [Gradle]とは何か
 
 ### 事例紹介
 - LinkedIn
@@ -186,7 +198,7 @@ gradlew test
 gradlew jar
 ```
 
-## Gradleへの移行
+## [Gradle]への移行
 
 ### [Antタスクの呼び出し](http://gradle.org/docs/current/userguide/ant.html)
 
