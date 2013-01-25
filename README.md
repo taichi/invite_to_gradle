@@ -24,10 +24,10 @@ markdownからhtmlを生成するGradleプラグイン
 - Javaにおけるビルドツールの歴史
 - [Groovy]とは何か
 - [Gradle]とは何か
-- [Graldeを使ったビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/simple/build.gradle)
+- [Graldeを使ったビルドスクリプト](https://github.com/taichi/invite_to_gradle/blob/master/build/simple/build.gradle)
 - [Gradle]への移行
 - Gradle Wrapper
-- [本格的なビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/complex/build.gradle)
+- [本格的なビルドスクリプト](https://github.com/taichi/invite_to_gradle/blob/master/build/complex/build.gradle)
 - まとめ
 
 
@@ -94,26 +94,26 @@ Javaに最も近いJVM言語である。
 
 ### HelloWorld.java を Groovyらしくする。
 
-- [ファイルの拡張子を.groovyに変更する。](https://github.com/taichi/toyama_201301/commit/1512c6a8307cbfd09a75b21408a666c5ab1c0a5d)
+- [ファイルの拡張子を.groovyに変更する。](https://github.com/taichi/invite_to_gradle/commit/1512c6a8307cbfd09a75b21408a666c5ab1c0a5d)
     - 例外はあるがJavaのコードはGroovyのコードであると考えて良い
-- [セミコロンを省略する事が出来る。](https://github.com/taichi/toyama_201301/commit/c54a6d160dc91b4a1aeb30118446dca4d661c1bb)
+- [セミコロンを省略する事が出来る。](https://github.com/taichi/invite_to_gradle/commit/c54a6d160dc91b4a1aeb30118446dca4d661c1bb)
     - 無関係な参考資料.1 [Javaでセミコロンなしでプログラムを書く](http://d.hatena.ne.jp/Nagise/20100321/1269182606)
     - 無関係な参考資料.2 [セミコロンレスJavaの構造化＆オブジェクト指向](http://d.hatena.ne.jp/Nagise/20110821/1313914797)
-- [デフォルトのスコープはpublicである。](https://github.com/taichi/toyama_201301/commit/a10e3d45253a8adab4a0c959449f907bf873d969)
-- [最外周の丸かっこは省略する事が出来る。](https://github.com/taichi/toyama_201301/commit/fd0ec96d9412109bfa8aed4e26c30383a89a1fb9)
-- [便利なショートカットメソッドがグローバル空間(GroovyDefaultMethods)に定義されている。](https://github.com/taichi/toyama_201301/commit/c9c44efbb5f1b340bbf8c4f9a64ce072f7376b84)
-- [スクリプトファイルとして使用出来る。](https://github.com/taichi/toyama_201301/commit/fb6bde5833d95f21c5aadb072f6853cc4cef6dd6)
+- [デフォルトのスコープはpublicである。](https://github.com/taichi/invite_to_gradle/commit/a10e3d45253a8adab4a0c959449f907bf873d969)
+- [最外周の丸かっこは省略する事が出来る。](https://github.com/taichi/invite_to_gradle/commit/fd0ec96d9412109bfa8aed4e26c30383a89a1fb9)
+- [便利なショートカットメソッドがグローバル空間(GroovyDefaultMethods)に定義されている。](https://github.com/taichi/invite_to_gradle/commit/c9c44efbb5f1b340bbf8c4f9a64ce072f7376b84)
+- [スクリプトファイルとして使用出来る。](https://github.com/taichi/invite_to_gradle/commit/fb6bde5833d95f21c5aadb072f6853cc4cef6dd6)
 
 ### プロパティ構文と文字列処理
 ここからはGroovyのより便利な機能を紹介する。  
 全ての機能を紹介する訳では無く太一が良く使っている利便性の高いものに絞って説明する。
 
-- [プロパティを宣言する。](https://github.com/taichi/toyama_201301/commit/d90470d8ec488d7d7c57b88b299502041fb1b69a)
-- [Power Assertとプロパティを使用する。](https://github.com/taichi/toyama_201301/commit/d2c109aa8c4de15152c5b868cbc68090ccc26555)
-- [オブジェクトの生成時にプロパティを設定する。](https://github.com/taichi/toyama_201301/commit/ef993badd83d39c8c96b678f2f8c9c91e9b73556)
-- [toJsonメソッドの追加。](https://github.com/taichi/toyama_201301/commit/71c29ba8eb51f7d69f85e55f62be0972d656aba2)
-- [returnを省略する事が出来る。](https://github.com/taichi/toyama_201301/commit/108262f0d3ae3d147cad077166bc7b9d8b436ddf)
-- [文字列をGStringによって表現する。](https://github.com/taichi/toyama_201301/commit/d1351301edd829e935a794bd51f8fa388310ea3a)
+- [プロパティを宣言する。](https://github.com/taichi/invite_to_gradle/commit/d90470d8ec488d7d7c57b88b299502041fb1b69a)
+- [Power Assertとプロパティを使用する。](https://github.com/taichi/invite_to_gradle/commit/d2c109aa8c4de15152c5b868cbc68090ccc26555)
+- [オブジェクトの生成時にプロパティを設定する。](https://github.com/taichi/invite_to_gradle/commit/ef993badd83d39c8c96b678f2f8c9c91e9b73556)
+- [toJsonメソッドの追加。](https://github.com/taichi/invite_to_gradle/commit/71c29ba8eb51f7d69f85e55f62be0972d656aba2)
+- [returnを省略する事が出来る。](https://github.com/taichi/invite_to_gradle/commit/108262f0d3ae3d147cad077166bc7b9d8b436ddf)
+- [文字列をGStringによって表現する。](https://github.com/taichi/invite_to_gradle/commit/d1351301edd829e935a794bd51f8fa388310ea3a)
     - ダブルクォートはGStringというテンプレート機能を持った文字列である。
     - シングルクォートによってStringを表現する。
     - Groovyにはキャラクタリテラルは存在しない。
@@ -122,9 +122,9 @@ Javaに最も近いJVM言語である。
 Java8 でついに[ラムダ](http://openjdk.java.net/projects/lambda/)が導入されるがGroovyのクロージャとは異なる。  
 しかしながら、多くの単純なケースでは良く似たコードで、良く似た振る舞いになる。  
 
-- [Javaによるリストの中身を大文字化するループ処理]()
-- [配列の初期化で生成されるのはList。]()
-- [ループ処理をクロージャを使ったものに置き換える。]()
+- [Javaによるリストの中身を大文字化するループ処理](https://github.com/taichi/invite_to_gradle/commit/7274e25633fc5c6550b8914e0de6471c7e7d6b4a)
+- [配列の初期化で生成されるのはList。](https://github.com/taichi/invite_to_gradle/commit/0144fc4e817982ed815c26d2c56277bde0d046a8)
+- [ループ処理をクロージャを使ったものに置き換える。](https://github.com/taichi/invite_to_gradle/commit/ef1b6e19c4172af90ddbd343824fa1af3b2c16bd)
 
 ### [Groovy] 参考資料
 - [Easy Going Groovy 2nd season on DevLOVE](http://www.slideshare.net/uehaj/dev-love-groovy2011)
@@ -160,7 +160,7 @@ Java8 でついに[ラムダ](http://openjdk.java.net/projects/lambda/)が導入
     set GRADLE_OPTS=-Dhttp.proxyHost=example.jp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=example.jp -Dhttps.proxyPort=8080
 ```
 
-## [Graldeを使ったビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/simple/build.gradle)
+## [Graldeを使ったビルドスクリプト](https://github.com/taichi/invite_to_gradle/blob/master/build/simple/build.gradle)
 
 ### Javaプロジェクト
 ```groovy
@@ -244,7 +244,7 @@ gradle.orgから実行バイナリをダウンロードしてくる。
 設定されたバージョン番号とインストール済のバージョン番号がズレていてもダウンロードしてくる。  
 尚、ダウンロードしてくるURLを任意の値にカスタマイズする事が出来る。  
 
-## [本格的なビルドスクリプト](https://github.com/taichi/toyama_201301/blob/master/build/complex/build.gradle)
+## [本格的なビルドスクリプト](https://github.com/taichi/invite_to_gradle/blob/master/build/complex/build.gradle)
 
 ### ディレクトリ構造のカスタマイズ
 
