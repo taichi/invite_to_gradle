@@ -151,7 +151,7 @@ Java8 でついに[ラムダ](http://openjdk.java.net/projects/lambda/)が導入
 ## Gradleの起動オプション
 以下の環境変数を設定する。  
 
-- メモリサイズとエンコーディングの設定  
+- メモリサイズの設定  
 ```
     set JAVA_OPTS=-Xms128m -Xmx4096m
 ```
