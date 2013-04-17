@@ -153,7 +153,7 @@ Java8 でついに[ラムダ](http://openjdk.java.net/projects/lambda/)が導入
 
 - メモリサイズとエンコーディングの設定  
 ```
-    set JAVA_OPTS=-Xms128m -Xmx4096m -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 
+    set JAVA_OPTS=-Xms128m -Xmx4096m
 ```
 - プロキシの設定  
 ```
